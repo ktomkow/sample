@@ -10,4 +10,4 @@ COPY --from=build-env /app/out .
 # standard entrypoint not used
 # ENTRYPOINT [ "dotnet", "Crumbs.Api.dll" ]
 # We will use this one with parametrized PORT
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet api.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet web.dll
